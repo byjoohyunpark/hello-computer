@@ -54,10 +54,4 @@ const convert = () => {
         codeVal.innerHTML += "0" + speechResult[i].charCodeAt(0).toString(2) + " ";
     }
     codeList.insertBefore(codeVal, codeList.childNodes[0]);
-
-}
-
-
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-document.body.style.backgroundColor = "blue";
 }
