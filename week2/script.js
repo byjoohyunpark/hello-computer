@@ -56,3 +56,8 @@ const convert = () => {
     codeList.insertBefore(codeVal, codeList.childNodes[0]);
 
 }
+
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+document.body.style.backgroundColor = "blue";
+}
