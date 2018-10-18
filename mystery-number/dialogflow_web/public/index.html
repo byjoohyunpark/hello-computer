@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js"></script>
+    <style>
+           body {
+            background-color: #202020;
+            overflow: hidden;
+        }
+
+        canvas {
+            position: absolute;
+            left: 2%;            
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            padding: 20px;
+            border: 1px solid white;
+        }
+        #my-button{
+            position : absolute;
+            right : 20%;
+            bottom : 10%;
+            z-index: 200;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button id="my-button">click</button>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
