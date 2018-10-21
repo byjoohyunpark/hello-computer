@@ -19,9 +19,6 @@ const io = require('socket.io').listen(server);
 io.on('connection', socket => {
   console.log('new user: ' + socket.id);
 
-//  socket.on('hi', data => {
-//    console.log(data);
-//  });
 
   socket.on('send to dialogflow', data => {
     console.log(data.query);
@@ -32,11 +29,11 @@ io.on('connection', socket => {
       })
       .then(responses => {
         const result = responses[0].queryResult;
-        console.log(result.fulfillmentText);
+        console.log(result);
         // do stuff here
         
         socket.emit('send to browser', {
-            query: result.fulfillmentText
+            query: result.fulfillmentText 
         });
         
       });
