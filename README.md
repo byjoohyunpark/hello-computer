@@ -3,4 +3,4 @@ This repository is used to submit my weekly projects for Nicole He's [Hello, Com
 
 * [Week 1](https://byjoohyunpark.github.io/hello-computer/week1/)
 * [Week 2](https://byjoohyunpark.github.io/hello-computer/week2/)
-* [final-Mystery Number](http://www.itp.parkjoohyun.com/mystery-number/)
+* [Final - Mystery Number](http://www.itp.parkjoohyun.com/mystery-number/)
