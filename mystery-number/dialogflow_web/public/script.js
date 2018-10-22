@@ -29,7 +29,7 @@ const getSpeech = () => {
 document.querySelector('#my-button').onclick = () => {
     synth.cancel();
     getSpeech();
-    //    success();
+//        success();
 
 };
 
@@ -72,6 +72,19 @@ socket.on('send to browser', data => {
         var image_x = document.getElementById('h');
         image_x.parentNode.removeChild(image_x);
     }
+        if (data.query.includes("Guess the mystery number")) {
+        reset();
+        let chance = document.querySelector("#chance");
+            chance.innerHTML = `Your chances: <br/><br/>
+       <img id="h" src="h.png" width="40" alt=""> 
+       <img id="h" src="h.png" width="40" alt="">
+       <img id="h" src="h.png" width="40" alt="">
+       <img id="h" src="h.png" width="40" alt="">
+       <img id="h" src="h.png" width="40" alt="">
+       <img id="h" src="h.png" width="40" alt="">
+       <img id="h" src="h.png" width="40" alt="">`;
+
+    }
 
 
 });
@@ -83,12 +96,12 @@ socket.on('send to browser', data => {
 function success() {
     wrapper.style.display = "block";
     setInterval(function () {
-        let num = 100;
+        let num = 20;
 
         for (let i = 0; i < num; i++) {
             let soju = document.createElement('img');
             soju.src = "h.png";
-            soju.width = "10";
+            soju.width = `${Math.floor(Math.random()*20 + 20)}`;
             wrapper.appendChild(soju);
         }
     }, 40);
