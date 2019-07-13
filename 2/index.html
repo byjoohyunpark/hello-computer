@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Speech Analyzer</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            overflow: hidden;
+        }
+
+        .wrapper {
+            display: flex;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        #result {
+            width: 15%;
+            padding: 2px 8px;            
+        }
+
+        #confidence {
+            width: 5%;
+            padding: 2px 8px;            
+        }
+
+        #code {
+            width: 70%;
+            padding: 2px 8px; 
+        }
+
+        #caption {
+            position: absolute;
+            right: 16px;
+            top: 8px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div id="result">
+        </div>
+        <div id="confidence">
+        </div>
+        <div id="code"></div>
+    </div>
+
+    <div id="caption">
+    <p>say<br>something<br>to<br>binarize</p>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+
+</html>
