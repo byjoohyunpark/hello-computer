@@ -1,5 +1,5 @@
 # hello-computer
 This repository is used to submit my weekly projects for Nicole He's [Hello, Computer: Unconventional Uses of Voice Technology](https://nicolehe.github.io/) course which covers wide range of voice technology.
 
-* [Project 1](https://byjoohyunpark.github.io/hello-computer/week1/)
-* [Project 2](https://byjoohyunpark.github.io/hello-computer/week2/)
+* [1](https://byjoohyunpark.github.io/hello-computer/week1/)
+* [2](https://byjoohyunpark.github.io/hello-computer/week2/)
